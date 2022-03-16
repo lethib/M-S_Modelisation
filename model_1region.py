@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 duree_pneu_km = 50000
 duree_voiture_km = 250000
 nb_km_voiture_an = 12500
-voiture_essence = "PLDVFossil"
+
 
 #Création d'un dictionnaire avec en clé l'année et en valeur le nombre de voiture
 db_vehicles = pd.read_csv("road_transport_stock copy.csv")
@@ -16,6 +16,8 @@ nb_voiture_an = create_dict(sommes,1900,2100)
 #Création d'un dictionnaire avec en clé l'année et en valeur le nombre de pneus sans prise en compte du recyclage
 nb_tire = {}
 
+print(db_region)
+print(sommes)
 
 #Convertir le stock de voiture en le stock de pneus
 for cle, valeur in nb_voiture_an.items():
