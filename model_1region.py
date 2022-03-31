@@ -9,7 +9,8 @@ nb_km_voiture_an = 12500
 
 
 #Création d'un dictionnaire avec en clé l'année et en valeur le nombre de voiture
-db_vehicles = pd.read_csv("road_transport_stock copy.csv")
+db_vehicles = pd.read_csv("db_csv/road_transport_stock copy.csv")
+print(db_vehicles)
 db_region = select_region(db_vehicles, "France","Region","none")
 sommes = create_sums(db_region,1900,2100)
 nb_voiture_an = create_dict(sommes,1900,2100)

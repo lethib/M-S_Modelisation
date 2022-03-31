@@ -1,6 +1,8 @@
 import pandas as pd
 from sqlalchemy import null
 
+#pandas.read_csv voir les arguments de la fonction pour remettre en page le CSV
+
 def nb_pneu_an(nb_voiture,duree_pneu_en_km,nb_km_an):
     """Équation de l'évolution du nombre de pneu par an"""
     res = 4*nb_voiture + 4*nb_voiture*nb_km_an/duree_pneu_en_km
@@ -51,4 +53,3 @@ def create_sums(csv_file, start_year, end_year):
     only_numbers = csv_file.iloc[:, (start_column-1):(end_column+1)]
 
     return only_numbers.sum()
-
