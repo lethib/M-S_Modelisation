@@ -1,7 +1,6 @@
 from function import *
 import matplotlib.pyplot as plt
 from cProfile import label
-import matplotlib.colors
 
 #Variables
 duree_pneu_km = 50000
@@ -10,7 +9,7 @@ nb_km_voiture_an = 12500
 liste_region = ["France", "Africa", "ASEAN", "China", "Europe\France", "India", "LatinAmerica", "MiddleEast", "NorthAmerica", "OCDEPacific", "RestOfAsia"]
 
 #Création d'un dictionnaire avec en clé l'année et en valeur le nombre de voiture
-db_vehicles = pd.read_csv("road_transport_stock copy.csv")
+db_vehicles = pd.read_csv("db_csv/road_transport_stock copy.csv")
 
 for region in liste_region:
 

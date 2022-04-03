@@ -1,5 +1,4 @@
 import pandas as pd
-from sqlalchemy import null
 
 #pandas.read_csv voir les arguments de la fonction pour remettre en page le CSV
 
